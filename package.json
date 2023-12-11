@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sanity-typed/types": "^6.0.0",
     "@sanity/client": "^6.9.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
