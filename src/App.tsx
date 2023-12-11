@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { client } from '../sanity/lib/client.ts'
+import client from "../sanity/lib/client.ts"
 
 function App() {
 	const [projects, setProjects] = useState<{title: string}[]| null>(null)
