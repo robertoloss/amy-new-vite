@@ -1,11 +1,11 @@
-import { picture } from "../schema/picture" 
-import { picture_section } from "../schema/picture_section"
-import { preview } from "../schema/preview"
-import { project } from "../schema/project"
-import { quote } from "../schema/quote"
-import { section } from "../schema/section"
-import { three_cols } from "../schema/three_cols"
-import { website } from "../schema/website"
+import { picture } from "./sanity-schemas/picture" 
+import { picture_section } from "./sanity-schemas/picture_section"
+import { preview } from "./sanity-schemas/preview"
+import { project } from "./sanity-schemas/project"
+import { quote } from "./sanity-schemas/quote"
+import { section } from "./sanity-schemas/section"
+import { three_cols } from "./sanity-schemas/three_cols"
+import { website } from "./sanity-schemas/website"
 
 export const schemaTypes = [
 	picture,

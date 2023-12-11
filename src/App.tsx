@@ -1,40 +1,48 @@
-import { useState, useEffect } from "react"
-import { createClient } from "@sanity/client";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+//import Error from './pages/Error'
+import Home from './pages/Home'
+import Root from './pages/Root'
+import About from './pages/About'
+import Project from './pages/Project'
+//import { Outlet } from 'react-router-dom'
+import Contact from './pages/Contact'
 
-const client = createClient({
-  apiVersion : "2023-12-10",
-  dataset : "production",
-  projectId : "qyyz7qna",
-  useCdn : false,
-})
+const routerArray = [
+  { 
+    path: '/',
+    element: <Root/>,
+    //errorElement: <Error/>,
+    children: [
+      {
+        index: true,
+        // path: 'login',
+        element: <Home />,
+      },
+      {
+        path: 'about',
+        element: <About />,
+      },
+			{
+				path: ':p',
+				element: <Project/>
+			},
+			{
+				path: 'contact',
+				element: <Contact/>
+			}
+    ]
+  }
+]
+const router = createBrowserRouter(routerArray)
 
-function App() {
-	const [projects, setProjects] = useState<{title: string}[]| null>(null)
-	
-	useEffect(()=>{
-		async function getProjects() {
-			const data = await client.fetch(
-				`*[_type == "project"]`
-			)
-			setProjects(data);
-			console.log(data);
-		}
-		getProjects();
-		
-	},[setProjects])	
-	
-	if (projects) {
-		console.log("projects : ", projects)
-	}
-
-  return (
-    <>
-      <div>	Hello there! </div>
-			{projects && projects.map(( project, index: number ) => 
-				<h1 key={index}>{project.title}</h1>
-			)}
-    </>
-  )
+  
+export default function App() {
+  return <RouterProvider 
+    router={router} 
+    fallbackElement={<div>Loading...</div>}
+  />
 }
 
-export default App
+
+
+
