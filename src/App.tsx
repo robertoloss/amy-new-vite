@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react"
-import client from "../sanity/lib/client.ts"
+import { createClient } from "@sanity/client";
+
+const client = createClient({
+  apiVersion : "2023-12-10",
+  dataset : "prod_vite",
+  projectId : "qyyz7qna",
+  useCdn : false,
+})
 
 function App() {
 	const [projects, setProjects] = useState<{title: string}[]| null>(null)
-
 	
 	useEffect(()=>{
 		async function getProjects() {
