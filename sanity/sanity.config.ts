@@ -1,6 +1,6 @@
 //import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
+import { deskTool } from 'sanity/desk'
+import { visionTool } from '@sanity/vision';
 import { defineConfig } from "@sanity-typed/types";
 import type { InferSchemaValues } from "@sanity-typed/types";
 import { picture } from './schemas/sanity-schemas/picture';
