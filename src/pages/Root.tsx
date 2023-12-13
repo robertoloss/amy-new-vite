@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom'
+import HeaderBar from '../components/HeaderBar'
 
 
 export default function Root() {
 
 	return (
 		<>
-			<h1>Root</h1>
+			<HeaderBar />
 			<Outlet/>
 		</>
 	)
