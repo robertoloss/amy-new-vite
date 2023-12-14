@@ -13,6 +13,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+		"build:types": "tsc -m amd -t ESNext -d --isolatedModules false  --moduleResolution node --esModuleInterop --jsx react --outFile dist/index.js src/main.ts && rm -rf dist/index.js ",
 
     /* Linting */
     "strict": true,
@@ -26,6 +27,7 @@
       ]
     }
   },
+
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

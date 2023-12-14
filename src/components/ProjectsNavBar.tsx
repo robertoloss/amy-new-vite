@@ -1,4 +1,4 @@
-import { Preview } from "../utils/sanity_types"
+import { Preview } from "../utils/sanity-types"
 import { NavigationMenuLink } from "@radix-ui/react-navigation-menu" 
 import { PortableTextComponents, PortableText } from "@portabletext/react"
 import { Link } from "react-router-dom"

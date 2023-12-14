@@ -8,7 +8,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '../components/ui/navigation-menu.tsx'
-import { Preview } from "../utils/sanity_types";
+import { Preview } from "../utils/sanity-types";
 
 type Props = {
 	previews: Preview[] | null

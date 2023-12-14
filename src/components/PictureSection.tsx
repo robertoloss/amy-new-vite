@@ -1,4 +1,4 @@
-import { Picture, PictureSection } from "../utils/sanity_types"
+import { Picture, PictureSection } from "../utils/sanity-types"
 
 
 type Props = {

@@ -1,4 +1,4 @@
-import { SanityValues } from '../../sanity/sanity.config.ts' 
+import { SanityValues } from "@/sanity.config"
 
 export type Project = SanityValues["project"]
 export type Picture = SanityValues["picture"]

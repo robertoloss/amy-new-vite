@@ -1,4 +1,4 @@
-import { urlFor } from "@/sanity/sanity-utils"
+import { urlFor } from "./sanity-queries";
 
 export type ColumnType = {
 	title: string, 

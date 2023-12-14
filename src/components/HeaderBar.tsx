@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Preview } from "../utils/sanity_types";
 import NavDrawer from "./NavDrawer";
 import { getPreviews } from "../utils/sanity-queries";
 import { Link } from "react-router-dom";
-
-
 
 export default function HeaderBar() {
 	const [shadow, setShadow] = useState<boolean>(false)

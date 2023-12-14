@@ -1,4 +1,4 @@
-import { Preview } from "../utils/sanity_types"
+import { Preview } from "../utils/sanity-types"
 import { IoCloseOutline } from "react-icons/io5";
 
 

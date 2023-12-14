@@ -1,9 +1,9 @@
 import { PortableText } from "@portabletext/react";
 import { components } from "./Hero";
-import arrowLeft from '@/public/arrow_left.svg'
+//import arrowLeft from '@/public/arrow_left.svg'
 import { Link } from "react-router-dom"; 
-import { urlFor } from "../../sanity/sanity-utils";
-import { Preview } from "@/utils/sanity_types";
+import { Preview } from "@/utils/sanity-types";
+import { urlFor } from "@/utils/sanity-queries";
 
 type Props = {
 	preview: Preview 

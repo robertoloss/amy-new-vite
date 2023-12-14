@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { createClient } from "@sanity/client";
-import { Project } from "../utils/sanity_types";
+import { Project } from "@/sanity/sanity-types";
 
 const client = createClient({
   apiVersion : "2023-12-10",
